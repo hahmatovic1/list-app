@@ -8,7 +8,7 @@ function App() {
             <InputField />
             <div>
                 <ul>
-                    <ListItem />
+                    <ListItem text = "banana"/>
                 </ul>
             </div>
 

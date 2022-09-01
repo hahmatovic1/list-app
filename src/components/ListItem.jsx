@@ -1,8 +1,9 @@
 import React from "react";
 
-function ListItem(){
-    return <li>random text</li>;
-
+function ListItem(props){
+    return <div>
+    <li>{props.text}</li>
+</div>
 }
 
 
