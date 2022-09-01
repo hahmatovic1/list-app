@@ -14,6 +14,7 @@ return (
       <input type="text" onChange={handelChange} value={item} />
       <button onClick={()=>{
         props.onAdd(item);
+        setItem("");
       }}
       >Add</button>
     </div>
