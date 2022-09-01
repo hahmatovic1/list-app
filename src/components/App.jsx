@@ -15,6 +15,14 @@ function App() {
         
     }
 
+    function deleteItem(id){
+        setItems(prevItems => {
+            return prevItems.filter((item, index) => {
+                return index !== id;
+            });
+        });
+    }
+
     return <div class="container">
             <h1>MY LIST</h1>
             <InputField onAdd={addListItem}/>
@@ -25,7 +33,7 @@ function App() {
                     key={index}
                     id={index}
                     text={toDoItem}
-                    />
+                    onChecked={deleteItem}/>
                 )}
                 </ul>
             </div>
