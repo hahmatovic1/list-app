@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function InputField(){
+function InputField(props){
 const [item, setItem] = useState("");
 
 function handelChange(event){
@@ -12,8 +12,10 @@ return (
     <div className="form">
       
       <input type="text" onChange={handelChange} value={item} />
-      {/* <p>{item}</p> testing item*/}
-      <button>Add</button>
+      <button onClick={()=>{
+        props.onAdd(item);
+      }}
+      >Add</button>
     </div>
   );
 }
