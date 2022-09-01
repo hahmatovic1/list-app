@@ -3,7 +3,7 @@ import React from "react";
 function ListItem(props){
     return <div onClick = {() => props.onChecked(props.id)}
     >
-    <li>{props.text}</li>
+    <li><h3>{props.text}</h3></li>
 </div>
 }
 

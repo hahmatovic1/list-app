@@ -2,13 +2,14 @@ body{
     margin: 0;
     background-color: #00a388;
     background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #fff;
     text-align: center;
 }
   
 h1 {
     margin-top: 4%;
-    font-family: 'Rubik Mono One', sans-serif;
-    color: #fff;
+    
     font-size: 50px;
 }
 
@@ -23,8 +24,35 @@ h1 {
     border: 3px #fff;
     padding: 1rem;
     box-sizing: border-box;
+    text-align: center;
 }
 
 li{
-    list-style-type: none; 
+    list-style-type:circle;
+    text-align: left;
+    position: relative;
+    padding: 0.5rem;
+    color:rgba(0, 0, 0, 0.916);
+  }
+
+ul{
+    margin-top: 3%;
+}
+
+h3{
+    font-size: 20px;
+    word-spacing: 1px;
+    margin:0;
+}
+
+button{
+    margin-left: 1%;
+    background-color: #00a388;
+    color: rgba(0, 0, 0, 0.916);
+    min-height: 20px;
+}
+
+input{
+    border-radius: 5px;
+    height: 18px;
 }
