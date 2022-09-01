@@ -20,7 +20,13 @@ function App() {
             <InputField onAdd={addListItem}/>
             <div>
                 <ul>
-                    <ListItem text = "banana"/>
+                    {items.map((toDoItem, index)=> 
+                    <ListItem 
+                    key={index}
+                    id={index}
+                    text={toDoItem}
+                    />
+                )}
                 </ul>
             </div>
 
